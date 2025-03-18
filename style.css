@@ -72,13 +72,42 @@ button {
   cursor: pointer;
 }
 
+#pedidos {
+  background-color: rgb(83, 83, 83);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+#lista-pedido {
+  list-style: none;
+  padding: 0;
+}
+
+#finalizar-pedido {
+  background-color: rgb(192, 0, 26);
+}
+
+#contato {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.redes-sociais a {
+  display: inline-block;
+  background-color: red;
+  color: black;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0.5rem;
+  border-radius: 4px;
+}
+
 footer {
   text-align: center;
   padding: 1rem 0;
   background-color: black;
   color: #ffff;
 }
-
 @media (min-width: 768px) {
   main {
     width: 50%;
@@ -89,20 +118,25 @@ footer {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
   }
+
+  .produto {
+    display: flex;
+    flex-direction: column; /* Se quiser que a imagem fique ao lado do texto, troque por "row" */
+    align-items: center;
+    text-align: center;
+  }
 }
 
-@media (min-width: 360px) {
+@media (min-width: 1024px) {
+  /* Ajuste para telas ainda maiores */
   main {
-    width: 80%;
-  }
-
-  nav a {
-    display: grid;
+    width: 70%;
   }
 
   .categoria {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1rem;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(300px, 1fr)
+    ); /* Ajuste do tamanho dos produtos */
   }
 }
