@@ -44,17 +44,13 @@ main {
 
 #img-250px {
   width: 250px;
-  height: auto;
+  height: 250px;
+  box-shadow: 2px 2px 10px rgb(255, 0, 0);
+  border-radius: 10px;
 }
 
 .categoria {
   margin-bottom: 2rem;
-}
-
-.produto img {
-  max-width: 20%;
-  height: auto;
-  border-radius: 8px;
 }
 
 .produto {
