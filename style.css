@@ -16,6 +16,10 @@ header p {
   margin: 2rem;
 }
 
+.banner{
+
+} /* Caso queira adicionar imagem no fundo do header*/
+
 nav a {
   color: red;
   text-decoration: none;
