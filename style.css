@@ -16,9 +16,12 @@ header p {
   margin: 2rem;
 }
 
-.banner{
-
+.banner {
 } /* Caso queira adicionar imagem no fundo do header*/
+
+main h2 {
+  text-align: center;
+}
 
 nav a {
   color: red;
@@ -37,6 +40,11 @@ a:hover {
 main {
   width: 80%;
   margin: 2rem auto;
+}
+
+#img-250px {
+  width: 250px;
+  height: auto;
 }
 
 .categoria {

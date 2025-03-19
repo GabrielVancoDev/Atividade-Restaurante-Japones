@@ -35,3 +35,16 @@ botoesAdicionar.forEach((botao) => {
     totalElemento.textContent = `R$ ${total.toFixed(2)}`;
   });
 });
+
+//Simula finalização do pedido
+
+const botaoFinalizarPedido = document.getElementById("finalizar-pedido");
+
+botaoFinalizarPedido.addEventListener("click", () => {
+  alert("Pedido finalizado com sucesso! " + totalElemento.textContent);
+
+  listaPedido.innerHTML = "";
+  total = 0;
+
+  totalElemento.textContent = `R$ ${total.toFixed(2)}`;
+});
